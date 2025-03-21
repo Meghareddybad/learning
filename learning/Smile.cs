@@ -8,15 +8,15 @@ namespace Iteration
 {
      class Smile
     {
-        public void Main()
+        public void Smile1()
         {
             
             while(true)
             {
                 Console.WriteLine("enteryour name;");
-                var input = Convert.ToInt32(Console.ReadLine());
+                var input = Console.ReadLine();
               
-                if (input != 0)
+                if (!string.IsNullOrWhiteSpace(input))
                 {
                     Console.WriteLine("@echo = " + input);
                     continue;
@@ -27,7 +27,7 @@ namespace Iteration
             }
            
         }
-        public void Main2() 
+        public void Smile2() 
         {
             var Random = new Random();
             
